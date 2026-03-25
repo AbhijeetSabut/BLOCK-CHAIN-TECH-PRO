@@ -1,0 +1,120 @@
+
+> server@1.0.0 dev
+> node --watch src/index.js
+
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  suppress all logs with { quiet: true }
+API server listening on http://localhost:4000
+(node:23252) [MONGOOSE] Warning: mongoose: Duplicate schema index on {"accessCode":1} for model "SharedFile". This is often due to declaring an index using both "index: true" and "schema.index()". Please remove the duplicate index definition.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+API server listening on http://localhost:4000
+TypeError: next is not a function
+    at model.hashPassword (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/models/User.js:36:3)
+    at async Kareem.execPre (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\kareem\index.js:70:24)
+    at async model.$__save (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:376:5)
+    at async model.save (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:642:5)
+    at async C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:2778:9
+    at async Promise.all (index 0)
+    at async model.create (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:2763:11)
+    at async file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/routes/authRoutes.js:32:18
+TypeError: next is not a function
+    at model.hashPassword (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/models/User.js:36:3)
+    at async Kareem.execPre (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\kareem\index.js:70:24)
+    at async model.$__save (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:376:5)
+    at async model.save (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:642:5)
+    at async C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:2778:9
+    at async Promise.all (index 0)
+    at async model.create (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\mongoose\lib\model.js:2763:11)
+    at async file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/routes/authRoutes.js:32:18
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+API server listening on http://localhost:4000
+SyntaxError: Expected property name or '}' in JSON at position 1 (line 1 column 2)
+    at JSON.parse (<anonymous>)
+    at parse (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\body-parser\lib\types\json.js:72:19)
+    at C:\Users\It Computer Point\Downloads\block chain technology\node_modules\body-parser\lib\read.js:162:18
+    at AsyncResource.runInAsyncScope (node:async_hooks:214:14)
+    at invokeCallback (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\raw-body\index.js:238:16)
+    at done (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\raw-body\index.js:227:7)
+    at IncomingMessage.onEnd (C:\Users\It Computer Point\Downloads\block chain technology\node_modules\raw-body\index.js:287:7)
+    at IncomingMessage.emit (node:events:508:28)
+    at endReadableNT (node:internal/streams/readable:1701:12)
+    at process.processTicksAndRejections (node:internal/process/task_queues:89:21) {
+  expose: true,
+  statusCode: 400,
+  status: 400,
+  body: '{\\',
+  type: 'entity.parse.failed'
+}
+(node:14472) [MONGOOSE] Warning: mongoose: the `new` option for `findOneAndUpdate()` and `findOneAndReplace()` is deprecated. Use `returnDocument: 'after'` instead.
+(Use `node --trace-warnings ...` to show where the warning was created)
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  load multiple .env files with { path: ['.env.local', '.env'] }
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🔐 encrypt with Dotenvx: https://dotenvx.com
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  enable debug logging with { debug: true }
+API server listening on http://localhost:4000
+Error: Illegal arguments: string, undefined
+    at _async (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/node_modules/bcryptjs/index.js:252:11)
+    at file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/node_modules/bcryptjs/index.js:280:7
+    at new Promise (<anonymous>)
+    at Object.compare (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/node_modules/bcryptjs/index.js:279:12)
+    at model.comparePassword (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/models/User.js:38:17)
+    at file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/routes/authRoutes.js:61:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Error: Illegal arguments: string, undefined
+    at _async (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/node_modules/bcryptjs/index.js:252:11)
+    at file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/node_modules/bcryptjs/index.js:280:7
+    at new Promise (<anonymous>)
+    at Object.compare (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/node_modules/bcryptjs/index.js:279:12)
+    at model.comparePassword (file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/models/User.js:38:17)
+    at file:///C:/Users/It%20Computer%20Point/Downloads/block%20chain%20technology/server/src/routes/authRoutes.js:61:31
+    at process.processTicksAndRejections (node:internal/process/task_queues:103:5)
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🔐 prevent committing .env to code: https://dotenvx.com/precommit
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🔐 prevent building .env in docker: https://dotenvx.com/prebuild
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  write to custom object with { processEnv: myObject }
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  specify custom .env file path with { path: '/custom/path/.env' }
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🤖 agentic secret storage: https://dotenvx.com/as2
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: 🛡️ auth for agents: https://vestauth.com
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚙️  override existing env vars with { override: true }
+API server listening on http://localhost:4000
+Restarting 'src/index.js'
+[dotenv@17.3.1] injecting env (7) from .env -- tip: ⚡️ secrets for agents: https://dotenvx.com/as2
+API server listening on http://localhost:4000
