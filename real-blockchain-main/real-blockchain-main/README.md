@@ -139,3 +139,38 @@ Frontend:
 - The Blueprint mounts that disk at `/opt/render/project/src/server/uploads`, which matches the server's `UPLOAD_DIR=../uploads` setting.
 - The static frontend includes a rewrite from `/*` to `/index.html` so React Router works on refresh and direct links.
 - If you change either Render URL later, update both `CLIENT_URLS` and `VITE_API_URL` and redeploy.
+- name: Generate Snake
+
+on:
+  schedule:
+    - cron: "0 0 * * *"
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+
+      - uses: Platane/snk@v3
+        with:
+          github_user_name: your-username
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+
+      - uses: crazy-max/ghaction-github-pages@v3
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+
+
+TEAM MEMBER
+ABHIJEET SABUT
+ABHISEK SABUT
+DEEPAK KUMAR DAS
+BISWAJIT PANIGRAHI 
+AYUSH PRADHAN
